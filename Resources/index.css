@@ -1,0 +1,453 @@
+/** General styling **/
+
+html, body {
+  font-size: 16px;
+  font-family: "Work Sans", Helvetica, sans-serif;
+  text-align: left;
+  color: #4F4F4F;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 740px) {
+.mobile {
+  display: none !important;
+}
+}
+
+h1 {
+  font-size: 2.20rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  width: 100%;
+  font-weight: 600;
+}
+
+p {
+  line-height: 150%;
+}
+
+a, a:link, a:visited, a:active, a:hover  {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+/** General positioning **/
+
+header, #left-logo, nav, .container, .content, footer {
+  display: flex;
+  align-items: center;
+}
+
+#left-logo, nav, .content, {
+  justify-content: space-around;
+}
+
+header, footer, .container  {
+  justify-content: space-between;
+}
+
+.left_side, .right_side, #container3, #container4, .lesson {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+header, .container, #container3, #container4 {
+  width: 100%;
+}
+
+.left_side {
+  width: 55%;
+  margin: 2rem 1.5rem;
+}
+
+.left_side img  {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.right_side {
+  width: 45%;
+  margin: 2rem 0;
+
+}
+
+@media only screen and (max-width: 740px) {
+  .left_side, .right_side {
+    width: 100%
+  }
+  .container, .content {
+    flex-direction: column;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: flex;
+  }
+}
+
+#number_2 .content, #number_4 .content {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#number_2 .desktop, #number_4 .desktop  {
+  margin: 1rem;
+  display: block;
+  width: 31%;
+  height: auto;
+}
+
+#number_2 .right_side, #number_4 .right_side {
+  border-left: 1px solid lightgray;
+}
+
+/** Header **/
+
+header {
+  position: fixed;
+  height: 4rem;
+  margin-bottom: 4rem;
+  z-index: 10;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  top: 0px;
+}
+
+#left-logo {
+  margin-left: 1.5rem;
+}
+
+#colmar {
+  font-weight: bold;
+}
+
+header nav a {
+  margin: 0 1rem;
+  border: 1px dimgray solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  transition: . 0.5s linear 0.5s;
+}
+
+
+#nav-desktop a:link, #nav-desktop a:visited {
+  color: #4F4F4F
+}
+
+#nav-desktop a:active, #nav-desktop a:hover {
+  background-color: dimgray;
+  color: white
+}
+
+@media only screen and (max-width: 740px) {
+  #nav-desktop, #left-logo p {
+    display: none;
+  }
+  #nav-mobile {
+    display: flex;
+  }
+  #nav-mobile img {
+    margin: 0 3rem;
+  }
+}
+
+/** Banner **/
+
+#number_1 {
+  margin-top: 4rem;
+  background-color: lightgray;
+  justify-content: space-between;
+}
+
+#number_1 .right_side {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#main_text {
+  margin: 0 1rem;
+  width: 80%;
+}
+
+#main_text h3 {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.button {
+  background-color: dimgray;
+  color: white;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 740px) {
+  #number_1 {
+    margin-top: 4rem;
+  }
+
+
+ #number_1 .left_side {
+    display: flex;
+    margin: 0;
+    background-color: dimgray;
+}
+
+#test {
+    background-image: url("file:///C:/Users/amaugest/Documents/projects/Colmar/resources/images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 10.25rem;
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+  }
+
+  #number_1 .left_side img {
+    display: none;
+  }
+
+  #number_1 .right_side {
+    justify-content: center;
+  }
+
+  #number_1 .right_side #main_text {
+    margin: 2rem 1rem;
+  }
+}
+
+/** Container 2 **/
+
+#number_2 {
+  background-color: #F7F7F7;
+  align-items: stretch;
+}
+
+#number_2 .left_side img {
+  margin-bottom: 2rem;
+}
+
+.quote {
+  font-style:italic;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.signature {
+  width: 100%
+}
+
+.right_side_text {
+  margin-right: 1rem;
+}
+
+.right_side_text p {
+  margin: 0.5rem 0 1rem 0;
+}
+
+#color {
+  background-color: lightgray;
+}
+
+
+@media only screen and (max-width: 740px) {
+  #number_2 .mobile {
+    display: block;
+    width: calc(100% - 2rem);
+    height: auto;
+    margin: 1rem;
+  }
+  #number_2 .left_side {
+    display: none;
+  }
+  .right_side_text  {
+    margin-left: 1rem;
+    width: calc(100% - 2rem);
+  }
+  .right_side_text p {
+    margin: 0.5rem 0;
+  }
+
+  #color{
+    background-color: #F7F7F7;
+  }
+}
+
+
+
+/** Container 3 **/
+
+#container3 {
+  background-color: rgba(211, 211, 211, 0.8);
+  width:100%
+}
+
+#container3 h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#number_3 {
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery {
+  margin: 0rem 0.5rem 1rem 0.5rem;
+  background-color: white;
+  min-width: 25%;
+  width: 25%;
+}
+
+.lesson {
+  width: calc(100%-1rem);
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.inferior {
+  margin-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 740px) {
+
+#container3 {
+  background-color: #F7F7F7;
+  border-top: 1px lightgray solid;
+  }
+
+.gallery {
+    width: calc(100% - 2rem);
+    background-color: lightgray;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    max-height: 3rem;
+    align-items: center;
+    overflow:hidden;
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+}
+
+#mobile_title {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    padding-left: 1rem;
+  }
+
+.gallery:hover {
+  max-height: 18rem;
+}
+
+ #animated5, #animated6, #animated1, #animated2, #animated3, #animated4 {
+ background-color: white;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+#container3 img, #container3 .lesson {
+    width: 45%;
+  }
+
+#container3 .lesson {
+    margin: 1rem 0;
+}
+
+#container3 img {
+    margin: 0;
+}
+}
+
+
+/** Container 4 **/
+
+#container4 {
+  background-color: #F7F7F7;
+}
+
+#container4 h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#number_4 {
+  align-items: stretch;
+}
+
+#number_4 .left_side, #number_4 .right_side {
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+.left_side video {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+#gray {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 740px) {
+#number_4 .right_side  {
+    display: none;
+  }
+
+#number_4 .left_side video {
+  margin: 0;
+  width: 100%;
+}
+
+#number_4 .left_side {
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+}
+}
+/** footer **/
+
+footer p {
+  margin: 1.5rem;
+}
+
+footer {
+  border: 1px solid lightgray;
+}
+
+.fa {
+  margin: 0 0.5rem;
+}
